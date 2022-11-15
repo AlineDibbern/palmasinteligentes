@@ -154,6 +154,9 @@ Codificação utilizada no Sketch Master:
 Codificação utilizada no Sketch config.h:
 [Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016060/Config.h.txt)
 
+Biblioteca A2 (BRINCANDO DOM IDEIAS, 2022):
+[A2a-master.zip](https://github.com/AlineDibbern/palmasinteligentes/files/10016223/A2a-master.zip)
+
 **Configurando o Módulo Wifi (parte 2) e o Módulo Sensor de Som pela IDE:**
 
 Para configurar o controlador para que faça com que receba e envie comandos do Modulo Wifi ESP8266 ESP-01 e do Módulo Sensor de Som ao módulo relé, deverão ser acoplados os Módulos ao controlador, por meio dos jumpers, e o controlador ao notebook por meio da porta de USB. Para compilação do código deverá ser utilizado o Sketch Slave.ino, que possui a biblioteca “A2” (BRINCANDO DOM IDEIAS, 2022) e a codificação de comandos, e para ser compilado no controlador deverá ser selecionado “Ferramentas”  Arduino AVR Boards  Arduino UNO e “Ferramentas”  Porta  COM X, onde X é um número de porta definido pelo computador.
@@ -161,8 +164,6 @@ Para configurar o controlador para que faça com que receba e envie comandos do 
 Codificação utilizada no Sketch Slave:
 [Sketch Slave.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016059/Sketch.Slave.txt)
 
-Biblioteca A2 (BRINCANDO DOM IDEIAS, 2022):
-[A2a-master.zip](https://github.com/AlineDibbern/palmasinteligentes/files/10016223/A2a-master.zip)
 
 # Resultados
 Projeto em Funcionamento:
@@ -187,7 +188,8 @@ Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do inte
 Em andamento...
 
 # Link para o documento final
-Em andamento...
+
+[Projeto Palmas Inteligentes_A4.docx](https://github.com/AlineDibbern/palmasinteligentes/files/10016233/Projeto.Palmas.Inteligentes_A4.docx)
 
 # Conclusões
 Em andamento...
