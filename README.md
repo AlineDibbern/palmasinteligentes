@@ -161,6 +161,9 @@ Para configurar o controlador para que faça com que receba e envie comandos do 
 Codificação utilizada no Sketch Slave:
 [Sketch Slave.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016059/Sketch.Slave.txt)
 
+Biblioteca A2 (BRINCANDO DOM IDEIAS, 2022):
+[A2a-master.zip](https://github.com/AlineDibbern/palmasinteligentes/files/10016223/A2a-master.zip)
+
 # Resultados
 Projeto em Funcionamento:
 
