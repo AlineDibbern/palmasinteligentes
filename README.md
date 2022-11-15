@@ -1,5 +1,14 @@
 # Índice 
 * [Palmas Inteligentes](#Palmas-Inteligentes)
+* [Objetivos](#Objetivo)
+* [Materiais](#Materiais)
+* [Metodologia](#Metodologia)
+* [Configurando o Controlador](#Configurando-o-Controlador)
+* [Tecnologias utilizadas](#Tecnologias-utilizadas)
+* [Resultados](#Resultados)
+* [Link para o vídeo-demonstração](#Link-para-o-vídeo-demonstração)
+* [Conclusões](#Conclusões)
+* [Referências](#Referências)
 
 # Palmas Inteligentes
 Projeto desenvolvido para a matéria de Objetos Inteligentes - Mackenzie
@@ -122,28 +131,20 @@ No site/app da adafruit (ADAFRUIT, 2022), que utiliza o protocolo MQTT, foi dese
 ![image](https://user-images.githubusercontent.com/111160296/202017119-f3bf68ad-0db6-4dfd-951b-ec531534b192.png)
 ![image](https://user-images.githubusercontent.com/111160296/202017131-5e3ad179-b779-477c-93e9-97f1943e10a7.png)
 
-
 Configurando o Módulo Wifi pela IDE (parte 1):
 Para configurar o Modulo Wifi ESP8266 ESP-01 deverá ser utilizado um Adaptador USB para Módulo WiFi ESP8266 ESP-01 e a biblioteca A2 (BRINCANDO DOM IDEIAS, 2022). Após acoplar o ESP8266 ao adaptador, o mesmo deverá ser inserido na porta USB do computador em forma de gravação. Para compilação do Sketch Master e Config.h no próprio ESP8266 ESP-01 deverá ser selecionado “Ferramentas”  Placa  ESP8266  Generic ESP8266 Modulo, e “Ferramentas”  Porta  COM X, onde X é um número da porta definido pelo computador.
 
-
 Codificação utilizada no Sketch Master:
-
 [Sketch Master.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016061/Sketch.Master.txt)
 
-
 Codificação utilizada no Sketch config.h:
-
 [Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016060/Config.h.txt)
-
 
 Configurando o Módulo Wifi (parte 2) e o Módulo Sensor de Som pela IDE:
 Para configurar o controlador para que faça com que receba e envie comandos do Modulo Wifi ESP8266 ESP-01 e do Módulo Sensor de Som ao módulo relé, deverão ser acoplados os Módulos ao controlador, por meio dos jumpers, e o controlador ao notebook por meio da porta de USB. Para compilação do código deverá ser utilizado o Sketch Slave.ino, que possui a biblioteca “A2” (BRINCANDO DOM IDEIAS, 2022) e a codificação de comandos, e para ser compilado no controlador deverá ser selecionado “Ferramentas”  Arduino AVR Boards  Arduino UNO e “Ferramentas”  Porta  COM X, onde X é um número de porta definido pelo computador.
 
 Codificação utilizada no Sketch Slave:
-
 [Sketch Slave.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016059/Sketch.Slave.txt)
-
 
 # Resultados
 Projeto em Funcionamento
