@@ -1,5 +1,4 @@
-![image](https://user-images.githubusercontent.com/111160296/202026937-7789b543-f25b-468e-880b-1cdf0ce8d3e4.png) UNIVERSIDADE PRESBITERIANA MACKENZIE ![image](https://user-images.githubusercontent.com/111160296/202027044-a17100d3-1221-413b-b7c7-362bb0567d28.png)
-
+![image](https://user-images.githubusercontent.com/111160296/202026937-7789b543-f25b-468e-880b-1cdf0ce8d3e4.png) UNIVERSIDADE PRESBITERIANA MACKENZIE 
 
 Faculdade de Computação e Informática
 
