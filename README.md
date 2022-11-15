@@ -291,43 +291,18 @@ Em andamento...
 
 # Referências 
 ADAFRUIT, 2022. Disponível em: < https://www.adafruit.com/  >. Acessado em: 11 de setembro de 2022.
-
 ATZORI, L.; IERA, A.; MORABITO, G. The Internet of Thinags: A survey. Computer Networks, v. 54, n. 15, p. 2787–2805, 2010.
-
 BRINCANDO COM IDEIAS, 2022. Disponível em: < https://www.youtube.com/c/brincandocomideias >. Acessado em: 24 de outubro de 2022.
-
 COSTA, C.L.; OLIVEIRA, L.; MOTA, L. M. S. Internet das coisas (IOT): um estudo exploratório em agronegócios. VI Simpósio da Ciência do Agronegócio. 2018.
-
 ELETROGATE, 2022. Arduino UNO R3. Disponível em: < https://www.eletrogate.com/uno-r3-cabo-usb-para-arduino >. Acessado em: 20 de agosto de 2022.
-
 ELETROGATE, 2022. Modulo Sensor de SOM KY. Disponível em: < https://www.eletrogate.com/modulo-sensor-de-som-ky-037 >. Acessado em: 20 de agosto de 2022.
-
 ELETROGATE, 2022. Cabo USB 2.0 – A/B. Disponível em: < https://www.eletrogate.com/cabo-usb-20-a-b-50cm >. Acessado em: 20 de agosto de 2022.
-
 ELETROGATE, 2022. Adaptador USB para Módulo WiFi ESP8266 ESP-01. Disponível em: < https://www.eletrogate.com/adaptador-usb-para-modulo-wifi-esp8266-esp-01 >. Acessado em: 24 de outubo de 2022.
-
 ELETROGATE, 2022. Modulo Relé. Disponível em: < https://www.eletrogate.com/modulo-rele-2-canais-5v >. Acessado em: 20 de agosto de 2022.
-
 ELETROGATE, 2022. Protoboard 830 pontos. < https://www.eletrogate.com/protoboard-830-pontos >. Acessado em: 20 de agosto de 2022.
-
 ELETROGATE, 2022. Jumpers - Macho/Femea. < https://www.eletrogate.com/jumpers-macho-femea-40-unidades-de-10-cm >. Acessado em: 20 de agosto de 2022.
-
 ELETROGATE, 2022. Jumpers – Macho/Macho. < https://www.eletrogate.com/jumpers-macho-macho-40-unidades-de-10-cm >. Acessado em: 20 de agosto de 2022.
-
 ELETROGATE, 2022. Módulo Wifi. Disponível em: < https://www.eletrogate.com/modulo-wifi-serial-esp8266-esp-01 >. Acessado em: 07 de setembro de 2022. 
-
 LEITE, J.R. E.; MARTINS, P. S.; URSINI, E. L. A Internet das Coisas (IoT):Tecnologias e Aplicações. Brazilian Technology Symposium, 2017.
-
 TURING, Dermot. A História da Computação: Do Ábaco à Inteligência Artificial. São Paulo: M.Books do Brazil Editora Ltda, 2019.
-
-
-
-
-
-
-
-
-
-
-
 
