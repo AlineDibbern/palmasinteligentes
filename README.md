@@ -13,7 +13,6 @@
 
 
 # Projeto Palmas Inteligentes
-Projeto desenvolvido para a matéria de Objetos Inteligentes - Universidade Presbiteriana Mackenzie (UPM).
 Utilizando um controlador para acender ou apagar as luzes de um ambiente com palmas e interruptor digital.
 
 # Desenvolvedoras
