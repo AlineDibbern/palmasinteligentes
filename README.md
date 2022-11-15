@@ -1,3 +1,6 @@
+# Índice 
+* [Palmas Inteligentes](#Palmas-Inteligentes)
+
 # Palmas Inteligentes
 Projeto desenvolvido para a matéria de Objetos Inteligentes - Mackenzie
 
@@ -126,12 +129,12 @@ Para configurar o Modulo Wifi ESP8266 ESP-01 deverá ser utilizado um Adaptador 
 
 Codificação utilizada no Sketch Master:
 
-[Codificação utilizada no Sketch Master.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016032/Codificacao.utilizada.no.Sketch.Master.txt)
+[Sketch Master.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016061/Sketch.Master.txt)
 
 
 Codificação utilizada no Sketch config.h:
 
-[Codificação utilizada no Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016031/Codificacao.utilizada.no.Config.h.txt)
+[Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016060/Config.h.txt)
 
 
 Configurando o Módulo Wifi (parte 2) e o Módulo Sensor de Som pela IDE:
@@ -139,7 +142,7 @@ Para configurar o controlador para que faça com que receba e envie comandos do 
 
 Codificação utilizada no Sketch Slave:
 
-[Codificação utilizada no Sketch Slave.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016035/Codificacao.utilizada.no.Sketch.Slave.txt)
+[Sketch Slave.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016059/Sketch.Slave.txt)
 
 
 # Resultados
