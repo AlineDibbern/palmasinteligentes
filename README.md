@@ -87,7 +87,8 @@ Foi adquirido um Adaptador USB para Módulo WiFi ESP8266 ESP-01 com as seguintes
 ![image](https://user-images.githubusercontent.com/111160296/202017870-ccd34177-dab9-4c50-9448-93702c3c514e.png)
 
 # Metodologia: 
-Etapa 1 - Controlador, Protoboard, Módulo Sensor de Som, Módulo Wifi e Módulo Relé:
+**Etapa 1 - Controlador, Protoboard, Módulo Sensor de Som, Módulo Wifi e Módulo Relé:**
+
 Inicialmente, os jumpers foram inseridos no controlador, protoboard, módulo sensor de som e no modulo relé de forma a realizar as funções solicitadas. 
 
 Protoboard ligada ao controlador pela entrada “GND” e “5V”, sendo que o “GND” foi ligado no polo negativo e a entrada de “5V” foi ligada no polo positivo da protoboard, conforme figura abaixo:
@@ -114,17 +115,17 @@ Na prática, o esquema eletrônico foi montado conforma figura abaixo:
 
 ![image](https://user-images.githubusercontent.com/111160296/202018274-7c2511cb-0cd4-444c-9e47-1d02c412b6e5.png)
 
-Etapa 2 - Controlador e notebook:
+**Etapa 2 - Controlador e notebook:**
 Em seguida, o controlador foi ligado ao computador por meio do cabo USB, e por meio deste foi configurado para o objetivo deste projeto. Além da configuração, o computador fornece energia elétrica ao controlador.
 
 ![image](https://user-images.githubusercontent.com/111160296/202018235-99550858-4a20-4388-8945-3fbcfbff75aa.png)
 
-Etapa 3 - Módulo Relé e Lâmpada:
+**Etapa 3 - Módulo Relé e Lâmpada:**
 O cabo flexível foi instalado no modulo de relé e nos plugues macho/fêmea, sendo que o plugue macho foi inserido na tomada 110V da casa.
 
 ![image](https://user-images.githubusercontent.com/111160296/202018356-1e5f69ea-6cf2-47aa-966c-372dacf12811.png)
 
-Etapa 4 - Lâmpada e Soquete bocal: 
+**Etapa 4 - Lâmpada e Soquete bocal:** 
 O cabo flexível foi instalado no bocal da lâmpada, onde a mesma foi inserida, e em um dos plugues machos.
 
 ![image](https://user-images.githubusercontent.com/111160296/202018386-4a72e462-6122-452c-a009-b861daa0b3c8.png)
@@ -134,7 +135,7 @@ O cabo flexível foi instalado no bocal da lâmpada, onde a mesma foi inserida, 
 ![image](https://user-images.githubusercontent.com/111160296/202018423-65edd7ea-cc14-4261-9745-ea4b07d62a98.png)
 ![image](https://user-images.githubusercontent.com/111160296/202018440-987e1c6f-01de-4922-854c-4c1f061bcb62.png)
 
-# Configurando o Controlador:
+**Configurando o Controlador:**
 Criando o interruptor digital na Internet:
 No site/app da adafruit (ADAFRUIT, 2022), que utiliza o protocolo MQTT, foi desenvolvido o interruptor digital com os botões de ON (1) e OFF (9). Foi inserido a biblioteca da adafruit na biblioteca da IDE do Arduino que será utilizada para configurar o controlador, o Módulo de Wifi, o Módulo Relé e o interruptor digital. 
 
@@ -159,16 +160,18 @@ Codificação utilizada no Sketch Slave:
 # Resultados
 Projeto em Funcionamento
 
-Acendendo a lâmpada:
+**Acendendo a lâmpada:**
 Com as luzes apagadas, ao bater uma palma, ou acionar o interruptor digital no modo ON (1), o modulo sensor de som e o módulo de wifi repassa para o controlador a informação que, por sua vez, verifica a informação, analisa a codificação, e repassa o comando para o modulo relé, que funciona como um interruptor, o qual acende a luz. 
 
 ![image](https://user-images.githubusercontent.com/111160296/202019300-a7aa90cc-2587-4c2b-9c57-d9f8f24db67a.png)
+
 ![image](https://user-images.githubusercontent.com/111160296/202019320-19dd8ac9-fcb3-43d5-97d9-ef7ae7ffaf04.png)
 
-Apagando a lâmpada:
+**Apagando a lâmpada:**
 Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do interruptor digital no modo OFF (9), o módulo sensor de som e o módulo de wifi repassam a informação para o controlador, o qual verifica a informação,  analisa a codificação e repassa o comando para o módulo relé, o qual apaga a luz.
 
 ![image](https://user-images.githubusercontent.com/111160296/202019371-cb778170-f962-4250-800e-b166ebf5b70e.png)
+
 ![image](https://user-images.githubusercontent.com/111160296/202019381-ce087f1f-0f38-4054-a104-dc0d040b14ab.png)
 
 # Link para o vídeo-demonstração
