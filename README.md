@@ -1,17 +1,29 @@
 # Índice 
 * [Palmas Inteligentes](#Palmas-Inteligentes)
+* [Participantes/Desenvolvedoras](#Participantes/Desenvolvedoras)
+* [Resumo](#Resumo)
 * [Objetivos](#Objetivo)
 * [Materiais](#Materiais)
 * [Metodologia](#Metodologia)
 * [Configurando o Controlador](#Configurando-o-Controlador)
-* [Tecnologias utilizadas](#Tecnologias-utilizadas)
 * [Resultados](#Resultados)
 * [Link para o vídeo-demonstração](#Link-para-o-vídeo-demonstração)
 * [Conclusões](#Conclusões)
 * [Referências](#Referências)
 
-# Palmas Inteligentes
-Projeto desenvolvido para a matéria de Objetos Inteligentes - Mackenzie
+
+# Projeto Palmas Inteligentes
+Projeto desenvolvido para a matéria de Objetos Inteligentes - Universidade Presbiteriana Mackenzie (UPM).
+Utilizando um controlador para acender ou apagar as luzes de um ambiente com palmas e interruptor digital.
+
+# Participantes/Desenvolvedoras
+Aline Gerato Dibbern (aline.dibbern@hotmail.com) 
+Pamella Ferreira da Costa (panha.pam@gmail.com)
+
+# Resumo:
+Em geral, podemos definir que a internet das Coisas (IoT) é o uso de dispositivos conectados em rede, incorporados ao ambiente físico, com o objetivo de melhorar alguns processos existentes ou criar um cenário inexistente. Hoje, a IoT se tornou tendência, principalmente por auxiliar em muitos processos rotineiros, e possui efeitos duradouros para a sociedade. Pensando nisso, o presente projeto possui como objetivo demonstrar que através de simples palmas e por um interruptor digital podemos acender, ou apagar as luzes de um ambiente com auxílio de um controlador. Com as luzes apagadas, ao bater uma palma, ou acionar o interruptor digital no modo ON, o modulo sensor de som e o módulo de wifi repassa para o controlador a informação que, por sua vez, verifica a informação, analisa a codificação, e repassa o comando para o modulo relé, que funciona como um interruptor, o qual acende a luz. Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do interruptor digital no modo OFF, o módulo sensor de som e o módulo de wifi repassam a informação para o controlador, o qual verifica a informação, analisa a codificação e repassa o comando para o módulo relé, o qual apaga a luz. Com isso, por meio de IoT podemos automatizar uma simples lâmpada, com auxílio de um controlador, acendendo-a, ou, apagando-a, com simples palmas ou com um interruptor digital facilitando a rotina do dia a dia.
+
+Palavras-chave: Internet das Coisas, Objetos inteligentes, Arduino, Sensor de som, Wifi, Palmas, Luzes.
 
 # Objetivo:
 O presente projeto possui como objetivo demonstrar que através de simples palmas e por um interruptor digital podemos acender, ou apagar as luzes de um ambiente com auxílio de um controlador. 
