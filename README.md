@@ -5,7 +5,6 @@
 * [Objetivos](#Objetivo)
 * [Materiais](#Materiais)
 * [Metodologia](#Metodologia)
-* [Configurando o Controlador](#Configurando-o-Controlador)
 * [Resultados](#Resultados)
 * [Link para o vídeo-demonstração](#Link-para-o-vídeo-demonstração)
 * [Conclusões](#Conclusões)
@@ -90,7 +89,6 @@ Foi adquirido um Adaptador USB para Módulo WiFi ESP8266 ESP-01 com as seguintes
 **Etapa 1 - Controlador, Protoboard, Módulo Sensor de Som, Módulo Wifi e Módulo Relé:**
 
 Inicialmente, os jumpers foram inseridos no controlador, protoboard, módulo sensor de som e no modulo relé de forma a realizar as funções solicitadas. 
-
 Protoboard ligada ao controlador pela entrada “GND” e “5V”, sendo que o “GND” foi ligado no polo negativo e a entrada de “5V” foi ligada no polo positivo da protoboard, conforme figura abaixo:
 
 ![image](https://user-images.githubusercontent.com/111160296/202018063-7ba8b554-add2-418a-8037-da85716bab40.png)
@@ -116,16 +114,19 @@ Na prática, o esquema eletrônico foi montado conforma figura abaixo:
 ![image](https://user-images.githubusercontent.com/111160296/202018274-7c2511cb-0cd4-444c-9e47-1d02c412b6e5.png)
 
 **Etapa 2 - Controlador e notebook:**
+
 Em seguida, o controlador foi ligado ao computador por meio do cabo USB, e por meio deste foi configurado para o objetivo deste projeto. Além da configuração, o computador fornece energia elétrica ao controlador.
 
 ![image](https://user-images.githubusercontent.com/111160296/202018235-99550858-4a20-4388-8945-3fbcfbff75aa.png)
 
 **Etapa 3 - Módulo Relé e Lâmpada:**
+
 O cabo flexível foi instalado no modulo de relé e nos plugues macho/fêmea, sendo que o plugue macho foi inserido na tomada 110V da casa.
 
 ![image](https://user-images.githubusercontent.com/111160296/202018356-1e5f69ea-6cf2-47aa-966c-372dacf12811.png)
 
 **Etapa 4 - Lâmpada e Soquete bocal:** 
+
 O cabo flexível foi instalado no bocal da lâmpada, onde a mesma foi inserida, e em um dos plugues machos.
 
 ![image](https://user-images.githubusercontent.com/111160296/202018386-4a72e462-6122-452c-a009-b861daa0b3c8.png)
@@ -136,6 +137,7 @@ O cabo flexível foi instalado no bocal da lâmpada, onde a mesma foi inserida, 
 ![image](https://user-images.githubusercontent.com/111160296/202018440-987e1c6f-01de-4922-854c-4c1f061bcb62.png)
 
 **Configurando o Controlador:**
+
 Criando o interruptor digital na Internet:
 No site/app da adafruit (ADAFRUIT, 2022), que utiliza o protocolo MQTT, foi desenvolvido o interruptor digital com os botões de ON (1) e OFF (9). Foi inserido a biblioteca da adafruit na biblioteca da IDE do Arduino que será utilizada para configurar o controlador, o Módulo de Wifi, o Módulo Relé e o interruptor digital. 
 
