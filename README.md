@@ -1,6 +1,6 @@
 # Índice 
-* [Palmas Inteligentes](#Palmas-Inteligentes)
-* [Participantes/Desenvolvedoras](#Participantes/Desenvolvedoras)
+* [Projeto Palmas Inteligentes](#Palmas-Inteligentes)
+* [Desenvolvedoras](#Desenvolvedoras)
 * [Resumo](#Resumo)
 * [Objetivos](#Objetivo)
 * [Materiais](#Materiais)
@@ -16,7 +16,7 @@
 Projeto desenvolvido para a matéria de Objetos Inteligentes - Universidade Presbiteriana Mackenzie (UPM).
 Utilizando um controlador para acender ou apagar as luzes de um ambiente com palmas e interruptor digital.
 
-# Participantes/Desenvolvedoras
+# Desenvolvedoras
 Aline Gerato Dibbern (aline.dibbern@hotmail.com) 
 Pamella Ferreira da Costa (panha.pam@gmail.com)
 
