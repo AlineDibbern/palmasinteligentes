@@ -126,98 +126,12 @@ Para configurar o Modulo Wifi ESP8266 ESP-01 deverá ser utilizado um Adaptador 
 
 Codificação utilizada no Sketch Master:
 
-// INCLUSÃO DE BIBLIOTECAS
-
-#include <A2a.h>
-#include "config.h"
-
-// DEFINIÇÕES
-
-#define endereco 0x08
-#define pinLED1 3
-#define pinLED2 4
-#define pinosom 7
-
-// INSTANCIANDO OBJETOS
-
-AdafruitIO_Feed *displayLED = io.feed("displayLED");
-
-A2a arduinoSlave;
-
-// DECLARAÇÃO DE FUNÇÕES
-
-void configuraMQTT();
-void retornoDisplayLED(AdafruitIO_Data *data);
-
-// DECLARAÇÃO DE VARIÁVEIS
-
-bool comandoRecebido = false;
-
-void setup() {
-  Serial.begin(9600);
-  while (! Serial);
-
-  configuraMQTT();
-
-  arduinoSlave.begin(0, 2);
-  Serial.println("Atualizando valor do Display de LED");
-  
-  displayLED->get();
-  io.run();
-  
-  Serial.println("Fim Setup");
-}
-
-void loop() {
-  io.run();
-}
-
-// IMPLEMENTO DE FUNÇÕES
-
-void configuraMQTT() {
-  Serial.print("Conectando ao Adafruit IO");
-  io.connect();
-
-  displayLED->onMessage(retornoDisplayLED);
-  
-  while (io.status() < AIO_CONNECTED) {
-    Serial.print(".");
-    delay(500);
-  }
-
-  Serial.println();
-  Serial.println(io.statusText());
-}
-
-void retornoDisplayLED(AdafruitIO_Data *data) {
-  Serial.print("Controle Recebido <- ");  
-  Serial.println(data->value());
-  
-  arduinoSlave.varWireWrite(endereco, 2, byte(data->toInt()));
-}
+[Codificação utilizada no Sketch Master.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016032/Codificacao.utilizada.no.Sketch.Master.txt)
 
 
 Codificação utilizada no Sketch config.h:
 
-/************************ Adafruit IO Config *******************************
-
-/// visit io.adafruit.com if you need to create an account,
-
-// or if you need your Adafruit IO key.
-
-#define IO_USERNAME  "AlineDibbern"
-#define IO_KEY       "aio_AYqN284WRlXuflUHr0NeSF4FYi5p"
-
-/******************************* WIFI **************************************/
-
-#define WIFI_SSID "Dibbern"
-#define WIFI_PASS "nikita12"
-
-#include "AdafruitIO_WiFi.h"
-
-AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
-
-/****************************************************************************/
+[Codificação utilizada no Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016031/Codificacao.utilizada.no.Config.h.txt)
 
 
 Configurando o Módulo Wifi (parte 2) e o Módulo Sensor de Som pela IDE:
@@ -225,49 +139,8 @@ Para configurar o controlador para que faça com que receba e envie comandos do 
 
 Codificação utilizada no Sketch Slave:
 
-#include <A2a.h>
-#define endereco 0x08
+[Codificação utilizada no Sketch Slave.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016035/Codificacao.utilizada.no.Sketch.Slave.txt)
 
-#define pinLED1 3
-#define pinLED2 4
-#define pinosom 7
-
-A2a arduinoMaster;
-
-byte displayLEDAnt;
-bool rele;
-
-void setup() {
-  arduinoMaster.begin(endereco);
-  arduinoMaster.onReceive(receberDados);
-  arduinoMaster.onRequest(enviarDados);
-
-  pinMode(pinLED1, OUTPUT);
-  pinMode(pinLED2, OUTPUT);
-  pinMode (pinosom, INPUT);
-  
-  rele=false;
-
-  Serial.begin(9600);
-}
-
-void loop() {   
-  byte displayLED = arduinoMaster.varWireRead(2);
-  bool rele = digitalRead(pinosom);
-  if ((displayLED != displayLEDAnt) ||(rele=!rele) ||((pinosom)==HIGH)) {
-      digitalWrite(pinLED2, displayLED >= 2);
-      displayLEDAnt = displayLED; 
-  }
-  digitalWrite(pinLED2,rele);
-}
-
-void receberDados() {
-  arduinoMaster.receiveData(); 
-}
-
-void enviarDados() {
-  arduinoMaster.sendData(); 
-}
 
 # Resultados
 Projeto em Funcionamento
@@ -287,22 +160,39 @@ Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do inte
 # Link para o vídeo-demonstração
 Em andamento...
 
+
 # Conclusões
+Em andamento...
+
 
 # Referências 
 ADAFRUIT, 2022. Disponível em: < https://www.adafruit.com/  >. Acessado em: 11 de setembro de 2022.
+
 ATZORI, L.; IERA, A.; MORABITO, G. The Internet of Thinags: A survey. Computer Networks, v. 54, n. 15, p. 2787–2805, 2010.
+
 BRINCANDO COM IDEIAS, 2022. Disponível em: < https://www.youtube.com/c/brincandocomideias >. Acessado em: 24 de outubro de 2022.
+
 COSTA, C.L.; OLIVEIRA, L.; MOTA, L. M. S. Internet das coisas (IOT): um estudo exploratório em agronegócios. VI Simpósio da Ciência do Agronegócio. 2018.
+
 ELETROGATE, 2022. Arduino UNO R3. Disponível em: < https://www.eletrogate.com/uno-r3-cabo-usb-para-arduino >. Acessado em: 20 de agosto de 2022.
+
 ELETROGATE, 2022. Modulo Sensor de SOM KY. Disponível em: < https://www.eletrogate.com/modulo-sensor-de-som-ky-037 >. Acessado em: 20 de agosto de 2022.
+
 ELETROGATE, 2022. Cabo USB 2.0 – A/B. Disponível em: < https://www.eletrogate.com/cabo-usb-20-a-b-50cm >. Acessado em: 20 de agosto de 2022.
+
 ELETROGATE, 2022. Adaptador USB para Módulo WiFi ESP8266 ESP-01. Disponível em: < https://www.eletrogate.com/adaptador-usb-para-modulo-wifi-esp8266-esp-01 >. Acessado em: 24 de outubo de 2022.
+
 ELETROGATE, 2022. Modulo Relé. Disponível em: < https://www.eletrogate.com/modulo-rele-2-canais-5v >. Acessado em: 20 de agosto de 2022.
+
 ELETROGATE, 2022. Protoboard 830 pontos. < https://www.eletrogate.com/protoboard-830-pontos >. Acessado em: 20 de agosto de 2022.
+
 ELETROGATE, 2022. Jumpers - Macho/Femea. < https://www.eletrogate.com/jumpers-macho-femea-40-unidades-de-10-cm >. Acessado em: 20 de agosto de 2022.
+
 ELETROGATE, 2022. Jumpers – Macho/Macho. < https://www.eletrogate.com/jumpers-macho-macho-40-unidades-de-10-cm >. Acessado em: 20 de agosto de 2022.
+
 ELETROGATE, 2022. Módulo Wifi. Disponível em: < https://www.eletrogate.com/modulo-wifi-serial-esp8266-esp-01 >. Acessado em: 07 de setembro de 2022. 
+
 LEITE, J.R. E.; MARTINS, P. S.; URSINI, E. L. A Internet das Coisas (IoT):Tecnologias e Aplicações. Brazilian Technology Symposium, 2017.
+
 TURING, Dermot. A História da Computação: Do Ábaco à Inteligência Artificial. São Paulo: M.Books do Brazil Editora Ltda, 2019.
 
