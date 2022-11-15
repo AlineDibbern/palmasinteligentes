@@ -89,6 +89,7 @@ Módulo Wifi conectado ao controlador, sendo que a entrada “GND” do módulo 
 ![image](https://user-images.githubusercontent.com/111160296/202018183-c63ac283-d7e6-4f1d-9cfb-c19a38ebe244.png)
 
 Na prática, o esquema eletrônico foi montado conforma figura abaixo:
+
 ![image](https://user-images.githubusercontent.com/111160296/202018274-7c2511cb-0cd4-444c-9e47-1d02c412b6e5.png)
 
 Etapa 2 - Controlador e notebook:
@@ -118,11 +119,11 @@ No site/app da adafruit (ADAFRUIT, 2022), que utiliza o protocolo MQTT, foi dese
 ![image](https://user-images.githubusercontent.com/111160296/202017119-f3bf68ad-0db6-4dfd-951b-ec531534b192.png)
 ![image](https://user-images.githubusercontent.com/111160296/202017131-5e3ad179-b779-477c-93e9-97f1943e10a7.png)
 
-
 Configurando o Módulo Wifi pela IDE (parte 1):
 Para configurar o Modulo Wifi ESP8266 ESP-01 deverá ser utilizado um Adaptador USB para Módulo WiFi ESP8266 ESP-01 e a biblioteca A2 (BRINCANDO DOM IDEIAS, 2022). Após acoplar o ESP8266 ao adaptador, o mesmo deverá ser inserido na porta USB do computador em forma de gravação. Para compilação do Sketch Master e Config.h no próprio ESP8266 ESP-01 deverá ser selecionado “Ferramentas”  Placa  ESP8266  Generic ESP8266 Modulo, e “Ferramentas”  Porta  COM X, onde X é um número da porta definido pelo computador.
 
 Codificação utilizada no Sketch Master:
+
 // INCLUSÃO DE BIBLIOTECAS
 #include <A2a.h>
 #include "config.h"
@@ -188,12 +189,16 @@ void retornoDisplayLED(AdafruitIO_Data *data) {
   arduinoSlave.varWireWrite(endereco, 2, byte(data->toInt()));
 }
 
+
 Codificação utilizada no Sketch config.h:
+
 /************************ Adafruit IO Config *******************************
+
 /// visit io.adafruit.com if you need to create an account,
 // or if you need your Adafruit IO key.
 #define IO_USERNAME  "AlineDibbern"
 #define IO_KEY       "aio_AYqN284WRlXuflUHr0NeSF4FYi5p"
+
 /******************************* WIFI **************************************/
 #define WIFI_SSID "Dibbern"
 #define WIFI_PASS "nikita12"
@@ -201,6 +206,7 @@ Codificação utilizada no Sketch config.h:
 #include "AdafruitIO_WiFi.h"
 
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+
 /****************************************************************************/
 
 
@@ -208,6 +214,7 @@ Configurando o Módulo Wifi (parte 2) e o Módulo Sensor de Som pela IDE:
 Para configurar o controlador para que faça com que receba e envie comandos do Modulo Wifi ESP8266 ESP-01 e do Módulo Sensor de Som ao módulo relé, deverão ser acoplados os Módulos ao controlador, por meio dos jumpers, e o controlador ao notebook por meio da porta de USB. Para compilação do código deverá ser utilizado o Sketch Slave.ino, que possui a biblioteca “A2” (BRINCANDO DOM IDEIAS, 2022) e a codificação de comandos, e para ser compilado no controlador deverá ser selecionado “Ferramentas”  Arduino AVR Boards  Arduino UNO e “Ferramentas”  Porta  COM X, onde X é um número de porta definido pelo computador.
 
 Codificação utilizada no Sketch Slave:
+
 #include <A2a.h>
 #define endereco 0x08
 
@@ -251,19 +258,4 @@ void receberDados() {
 void enviarDados() {
   arduinoMaster.sendData(); 
 }
-
-
-3. A descrição do hardware utilizado (plataformas de desenvolvimento, sensores, atuadores, impressão 3D de peças, medidas de peças e caixas etc.)
-
-    3.1
-
-
-4. A documentação das interfaces, protocolos e módulos de comunicação.
-
-    4.1
-
-
-5. O projeto deve possuir comunicação/controle via internet (TCP/IP) e uso do Protocolo MQTT.
-
-    5.1
 
