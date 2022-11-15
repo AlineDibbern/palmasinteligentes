@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/111160296/202026937-7789b543-f25b-468e-880b-1cdf0ce8d3e4.png)
+
+
 # Índice 
 * [Projeto Palmas Inteligentes](#Projeto-Palmas-Inteligentes)
 * [Desenvolvedoras](#Desenvolvedoras)
