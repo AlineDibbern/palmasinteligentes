@@ -57,8 +57,7 @@ Para desenvolvimento do projeto, foram adquiridos:
 
 8. Adpatdor para ESP01: Foi adquirido um Adaptador USB para Módulo WiFi ESP8266 ESP-01 com as seguintes especificações: Conexão USB-Serial, Chip Controlador CH340G e tensão 6.3V.
 
-Adpatdor para ESP01:
-Foi adquirido um Adaptador USB para Módulo WiFi ESP8266 ESP-01 com as seguintes especificações: Conexão USB-Serial, Chip Controlador CH340G e tensão 6.3V.
+![image](https://user-images.githubusercontent.com/111160296/202025101-b818b72c-7341-4756-8e00-8af8bd17bcfb.png)
 
 9. Módulo Wifi:Foi adquirido um Módulo WiFi Serial ESP8266 ESP-01 com as seguintes especificações: Padrão 802.11 b/g/n, Wi-Fi Direct (P2P), contém Stack TCP/IP integrada, segurança WPA, WPA2, tensão 3.3V.
 
@@ -144,7 +143,8 @@ No site/app da adafruit (ADAFRUIT, 2022), que utiliza o protocolo MQTT, foi dese
 ![image](https://user-images.githubusercontent.com/111160296/202017119-f3bf68ad-0db6-4dfd-951b-ec531534b192.png)
 ![image](https://user-images.githubusercontent.com/111160296/202017131-5e3ad179-b779-477c-93e9-97f1943e10a7.png)
 
-Configurando o Módulo Wifi pela IDE (parte 1):
+**Configurando o Módulo Wifi pela IDE (parte 1):**
+
 Para configurar o Modulo Wifi ESP8266 ESP-01 deverá ser utilizado um Adaptador USB para Módulo WiFi ESP8266 ESP-01 e a biblioteca A2 (BRINCANDO DOM IDEIAS, 2022). Após acoplar o ESP8266 ao adaptador, o mesmo deverá ser inserido na porta USB do computador em forma de gravação. Para compilação do Sketch Master e Config.h no próprio ESP8266 ESP-01 deverá ser selecionado “Ferramentas”  Placa  ESP8266  Generic ESP8266 Modulo, e “Ferramentas”  Porta  COM X, onde X é um número da porta definido pelo computador.
 
 Codificação utilizada no Sketch Master:
@@ -153,16 +153,18 @@ Codificação utilizada no Sketch Master:
 Codificação utilizada no Sketch config.h:
 [Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016060/Config.h.txt)
 
-Configurando o Módulo Wifi (parte 2) e o Módulo Sensor de Som pela IDE:
+**Configurando o Módulo Wifi (parte 2) e o Módulo Sensor de Som pela IDE:**
+
 Para configurar o controlador para que faça com que receba e envie comandos do Modulo Wifi ESP8266 ESP-01 e do Módulo Sensor de Som ao módulo relé, deverão ser acoplados os Módulos ao controlador, por meio dos jumpers, e o controlador ao notebook por meio da porta de USB. Para compilação do código deverá ser utilizado o Sketch Slave.ino, que possui a biblioteca “A2” (BRINCANDO DOM IDEIAS, 2022) e a codificação de comandos, e para ser compilado no controlador deverá ser selecionado “Ferramentas”  Arduino AVR Boards  Arduino UNO e “Ferramentas”  Porta  COM X, onde X é um número de porta definido pelo computador.
 
 Codificação utilizada no Sketch Slave:
 [Sketch Slave.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016059/Sketch.Slave.txt)
 
 # Resultados
-Projeto em Funcionamento
+Projeto em Funcionamento:
 
 **Acendendo a lâmpada:**
+
 Com as luzes apagadas, ao bater uma palma, ou acionar o interruptor digital no modo ON (1), o modulo sensor de som e o módulo de wifi repassa para o controlador a informação que, por sua vez, verifica a informação, analisa a codificação, e repassa o comando para o modulo relé, que funciona como um interruptor, o qual acende a luz. 
 
 ![image](https://user-images.githubusercontent.com/111160296/202019300-a7aa90cc-2587-4c2b-9c57-d9f8f24db67a.png)
@@ -170,6 +172,7 @@ Com as luzes apagadas, ao bater uma palma, ou acionar o interruptor digital no m
 ![image](https://user-images.githubusercontent.com/111160296/202019320-19dd8ac9-fcb3-43d5-97d9-ef7ae7ffaf04.png)
 
 **Apagando a lâmpada:**
+
 Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do interruptor digital no modo OFF (9), o módulo sensor de som e o módulo de wifi repassam a informação para o controlador, o qual verifica a informação,  analisa a codificação e repassa o comando para o módulo relé, o qual apaga a luz.
 
 ![image](https://user-images.githubusercontent.com/111160296/202019371-cb778170-f962-4250-800e-b166ebf5b70e.png)
