@@ -1,6 +1,5 @@
-UNIVERSIDADE PRESBITERIANA MACKENZIE 
-
-Faculdade de Computação e Informática
+# Projeto Palmas Inteligentes
+Utilizando um controlador para acender ou apagar as luzes de um ambiente com palmas e interruptor digital.
 
 # Índice 
 * [Projeto Palmas Inteligentes](#Projeto-Palmas-Inteligentes)
@@ -14,10 +13,6 @@ Faculdade de Computação e Informática
 * [Link para o documento final](#Link-para-o-documento-final)
 * [Conclusões](#Conclusões)
 * [Referências](#Referências)
-
-
-# Projeto Palmas Inteligentes
-Utilizando um controlador para acender ou apagar as luzes de um ambiente com palmas e interruptor digital.
 
 # Desenvolvedoras
 Aline Gerato Dibbern (aline.dibbern@hotmail.com) e Pamella Ferreira da Costa (panha.pam@gmail.com).
