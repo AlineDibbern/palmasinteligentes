@@ -119,35 +119,41 @@ No site/app da adafruit (ADAFRUIT, 2022), que utiliza o protocolo MQTT, foi dese
 ![image](https://user-images.githubusercontent.com/111160296/202017119-f3bf68ad-0db6-4dfd-951b-ec531534b192.png)
 ![image](https://user-images.githubusercontent.com/111160296/202017131-5e3ad179-b779-477c-93e9-97f1943e10a7.png)
 
+
 Configurando o Módulo Wifi pela IDE (parte 1):
 Para configurar o Modulo Wifi ESP8266 ESP-01 deverá ser utilizado um Adaptador USB para Módulo WiFi ESP8266 ESP-01 e a biblioteca A2 (BRINCANDO DOM IDEIAS, 2022). Após acoplar o ESP8266 ao adaptador, o mesmo deverá ser inserido na porta USB do computador em forma de gravação. Para compilação do Sketch Master e Config.h no próprio ESP8266 ESP-01 deverá ser selecionado “Ferramentas”  Placa  ESP8266  Generic ESP8266 Modulo, e “Ferramentas”  Porta  COM X, onde X é um número da porta definido pelo computador.
+
 
 Codificação utilizada no Sketch Master:
 
 // INCLUSÃO DE BIBLIOTECAS
+
 #include <A2a.h>
 #include "config.h"
 
 // DEFINIÇÕES
+
 #define endereco 0x08
 #define pinLED1 3
 #define pinLED2 4
 #define pinosom 7
 
 // INSTANCIANDO OBJETOS
+
 AdafruitIO_Feed *displayLED = io.feed("displayLED");
 
 A2a arduinoSlave;
 
 // DECLARAÇÃO DE FUNÇÕES
+
 void configuraMQTT();
 void retornoDisplayLED(AdafruitIO_Data *data);
 
 // DECLARAÇÃO DE VARIÁVEIS
+
 bool comandoRecebido = false;
 
 void setup() {
-  
   Serial.begin(9600);
   while (! Serial);
 
@@ -167,6 +173,7 @@ void loop() {
 }
 
 // IMPLEMENTO DE FUNÇÕES
+
 void configuraMQTT() {
   Serial.print("Conectando ao Adafruit IO");
   io.connect();
@@ -195,11 +202,14 @@ Codificação utilizada no Sketch config.h:
 /************************ Adafruit IO Config *******************************
 
 /// visit io.adafruit.com if you need to create an account,
+
 // or if you need your Adafruit IO key.
+
 #define IO_USERNAME  "AlineDibbern"
 #define IO_KEY       "aio_AYqN284WRlXuflUHr0NeSF4FYi5p"
 
 /******************************* WIFI **************************************/
+
 #define WIFI_SSID "Dibbern"
 #define WIFI_PASS "nikita12"
 
@@ -258,4 +268,66 @@ void receberDados() {
 void enviarDados() {
   arduinoMaster.sendData(); 
 }
+
+# Resultados
+Projeto em Funcionamento
+
+Acendendo a lâmpada:
+Com as luzes apagadas, ao bater uma palma, ou acionar o interruptor digital no modo ON (1), o modulo sensor de som e o módulo de wifi repassa para o controlador a informação que, por sua vez, verifica a informação, analisa a codificação, e repassa o comando para o modulo relé, que funciona como um interruptor, o qual acende a luz. 
+
+![image](https://user-images.githubusercontent.com/111160296/202019300-a7aa90cc-2587-4c2b-9c57-d9f8f24db67a.png)
+![image](https://user-images.githubusercontent.com/111160296/202019320-19dd8ac9-fcb3-43d5-97d9-ef7ae7ffaf04.png)
+
+Apagando a lâmpada:
+Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do interruptor digital no modo OFF (9), o módulo sensor de som e o módulo de wifi repassam a informação para o controlador, o qual verifica a informação,  analisa a codificação e repassa o comando para o módulo relé, o qual apaga a luz.
+
+![image](https://user-images.githubusercontent.com/111160296/202019371-cb778170-f962-4250-800e-b166ebf5b70e.png)
+![image](https://user-images.githubusercontent.com/111160296/202019381-ce087f1f-0f38-4054-a104-dc0d040b14ab.png)
+
+# Link para o vídeo-demonstração
+Em andamento...
+
+# Conclusões
+
+# Referências 
+ADAFRUIT, 2022. Disponível em: < https://www.adafruit.com/  >. Acessado em: 11 de setembro de 2022.
+
+ATZORI, L.; IERA, A.; MORABITO, G. The Internet of Thinags: A survey. Computer Networks, v. 54, n. 15, p. 2787–2805, 2010.
+
+BRINCANDO COM IDEIAS, 2022. Disponível em: < https://www.youtube.com/c/brincandocomideias >. Acessado em: 24 de outubro de 2022.
+
+COSTA, C.L.; OLIVEIRA, L.; MOTA, L. M. S. Internet das coisas (IOT): um estudo exploratório em agronegócios. VI Simpósio da Ciência do Agronegócio. 2018.
+
+ELETROGATE, 2022. Arduino UNO R3. Disponível em: < https://www.eletrogate.com/uno-r3-cabo-usb-para-arduino >. Acessado em: 20 de agosto de 2022.
+
+ELETROGATE, 2022. Modulo Sensor de SOM KY. Disponível em: < https://www.eletrogate.com/modulo-sensor-de-som-ky-037 >. Acessado em: 20 de agosto de 2022.
+
+ELETROGATE, 2022. Cabo USB 2.0 – A/B. Disponível em: < https://www.eletrogate.com/cabo-usb-20-a-b-50cm >. Acessado em: 20 de agosto de 2022.
+
+ELETROGATE, 2022. Adaptador USB para Módulo WiFi ESP8266 ESP-01. Disponível em: < https://www.eletrogate.com/adaptador-usb-para-modulo-wifi-esp8266-esp-01 >. Acessado em: 24 de outubo de 2022.
+
+ELETROGATE, 2022. Modulo Relé. Disponível em: < https://www.eletrogate.com/modulo-rele-2-canais-5v >. Acessado em: 20 de agosto de 2022.
+
+ELETROGATE, 2022. Protoboard 830 pontos. < https://www.eletrogate.com/protoboard-830-pontos >. Acessado em: 20 de agosto de 2022.
+
+ELETROGATE, 2022. Jumpers - Macho/Femea. < https://www.eletrogate.com/jumpers-macho-femea-40-unidades-de-10-cm >. Acessado em: 20 de agosto de 2022.
+
+ELETROGATE, 2022. Jumpers – Macho/Macho. < https://www.eletrogate.com/jumpers-macho-macho-40-unidades-de-10-cm >. Acessado em: 20 de agosto de 2022.
+
+ELETROGATE, 2022. Módulo Wifi. Disponível em: < https://www.eletrogate.com/modulo-wifi-serial-esp8266-esp-01 >. Acessado em: 07 de setembro de 2022. 
+
+LEITE, J.R. E.; MARTINS, P. S.; URSINI, E. L. A Internet das Coisas (IoT):Tecnologias e Aplicações. Brazilian Technology Symposium, 2017.
+
+TURING, Dermot. A História da Computação: Do Ábaco à Inteligência Artificial. São Paulo: M.Books do Brazil Editora Ltda, 2019.
+
+
+
+
+
+
+
+
+
+
+
 
