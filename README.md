@@ -151,7 +151,7 @@ Codificação utilizada no Sketch Master:
 [Sketch Master.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016061/Sketch.Master.txt)
 
 Codificação utilizada no Sketch config.h:
-[Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10016060/Config.h.txt)
+[Config.h.txt](https://github.com/AlineDibbern/palmasinteligentes/files/10017399/Config.h.txt)
 
 Biblioteca A2 (BRINCANDO DOM IDEIAS, 2022):
 [A2a-master.zip](https://github.com/AlineDibbern/palmasinteligentes/files/10016223/A2a-master.zip)
