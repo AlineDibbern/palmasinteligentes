@@ -196,7 +196,7 @@ Para as conclusões do projeto foram consideradas as seguintes questões e suas,
 
 •	Os objetivos propostos foram alcançados? Sim, tanto com a utilização da Palma quanto com o interruptor digital é possível ligar e apagar a luz.
 
-•	Quais são os principais problemas enfrentados e como foram resolvidos? Um dos principais problemas enfrentados foi realizar a conexão entre ESO01, Arduino e Adafruit, e depois foi conciliar o sensor ao interruptor. A forma como achamos para resolver foi procurar por informações na internet de projetos que sugeriam ideias de como resolver o problema encontrado por nós.
+•	Quais são os principais problemas enfrentados e como foram resolvidos? Um dos principais problemas enfrentados foi realizar a conexão entre ESP01, Arduino e Adafruit, e depois foi conciliar o sensor ao interruptor. A forma como achamos para resolver foi procurar por informações na internet de projetos que sugeriam ideias de como resolver o problema encontrado por nós.
 
 •	Quais são as vantagens e desvantagens do projeto? A vantagem é que não há a necessidade de você chegar até um interruptor físico para acender as luzes, por meio de um simples acesso na internet (interruptor digital) ou com o bater de palmas a luzes se acendem. Rápido e prático. A principal vantagem, e o principal intuito desse projeto, é a segurança e a facilidade. A desvantagem seria caso o local esteja sem energia elétrica o sistema não iria funcionar. Outra desvantagem seria caso o local esteja sem internet o interruptor digital não iria acionar. Outra desvantagem seria para o sensor de som, que possui uma distancia limite para ser acionado.
 
