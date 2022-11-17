@@ -187,8 +187,7 @@ Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do inte
 https://www.youtube.com/watch?v=mjg00a1gf-8
 
 # Link para o documento final
-[Projeto Palmas Inteligentes_A4.docx](https://github.com/AlineDibbern/palmasinteligentes/files/10017084/Projeto.Palmas.Inteligentes_A4.docx)
-
+[Projeto Palmas Inteligentes_A4.docx](https://github.com/AlineDibbern/palmasinteligentes/files/10027011/Projeto.Palmas.Inteligentes_A4.docx)
 
 # Conclusões
 Para as conclusões do projeto foram consideradas as seguintes questões e suas, respectivas, respostas: 
