@@ -90,27 +90,27 @@ Para desenvolvimento do projeto, foram adquiridos:
 Inicialmente, os jumpers foram inseridos no controlador, protoboard, módulo sensor de som e no modulo relé de forma a realizar as funções solicitadas. 
 Protoboard ligada ao controlador pela entrada “GND” e “5V”, sendo que o “GND” foi ligado no polo negativo e a entrada de “5V” foi ligada no polo positivo da protoboard, conforme figura abaixo:
 
-![image](https://user-images.githubusercontent.com/111160296/202018063-7ba8b554-add2-418a-8037-da85716bab40.png)
+![image](https://user-images.githubusercontent.com/111160296/202946085-502a2908-fdc3-43f7-b1af-7125e3a8011f.png)
 
 Sensor de som conectado a protoboard, sendo que a entrada “G” do sensor foi ligada ao polo negativo e a entrada “+” do sensor foi ligada ao polo positivo da protoboard.
 
-![image](https://user-images.githubusercontent.com/111160296/202018075-55b4c128-2586-4e44-9432-a3baf900782d.png)
+![image](https://user-images.githubusercontent.com/111160296/202946095-c3525a1f-8be8-47f5-b9d1-97fabb3517bb.png)
 
 Sensor de som conectado ao controlador, sendo que a entrada “DO” foi ligada à entrada “7” do controlador.
 
-![image](https://user-images.githubusercontent.com/111160296/202018118-17eae7b2-d211-4394-ab8f-7689de1aaecc.png)
+![image](https://user-images.githubusercontent.com/111160296/202946108-080b0d3a-5605-4698-9c29-d509f2ab8bd9.png)
 
 Módulo Relé conectado ao Protoboard e Controlador, sendo que a entrada “VCC” do modulo relé foi ligado ao polo positivo da protoboard, e a entrada “GND” do módulo relé foi ligada ao negativo da protoboard. Pela entrada “IN2” o módulo relé foi ligado ao controlador pela entrada ”4”.
 
-![image](https://user-images.githubusercontent.com/111160296/202018147-38ba058f-35ef-441c-9397-52bbe02d887e.png)
+![image](https://user-images.githubusercontent.com/111160296/202946129-6fe84027-5969-470f-9bd3-cfbf35fd2a85.png)
 
 Módulo Wifi conectado ao controlador, sendo que a entrada “GND” do módulo wifi foi ligada ao “GND” do controlador, a entrada “GPIO2” do módulo wifi foi ligado a entrada “A5” do controlador, a entrada “GPIO0” do módulo wifi foi ligada a entrada do “A4” do controlador, e as entradas “VCC” e “CH_PD” do módulo wifi foi ligada a entrada 3.3V do controlador.
 
-![image](https://user-images.githubusercontent.com/111160296/202018183-c63ac283-d7e6-4f1d-9cfb-c19a38ebe244.png)
+![image](https://user-images.githubusercontent.com/111160296/202946143-2d81b516-7909-4c15-8d82-92fff5df0518.png)
 
 Na prática, o esquema eletrônico foi montado conforma figura abaixo:
 
-![image](https://user-images.githubusercontent.com/111160296/202018274-7c2511cb-0cd4-444c-9e47-1d02c412b6e5.png)
+![image](https://user-images.githubusercontent.com/111160296/202946158-2ac92e58-d9a5-48b3-9bff-c21d130317bd.png)
 
 **Etapa 2 - Controlador e notebook:**
 
