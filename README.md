@@ -187,7 +187,7 @@ Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do inte
 https://www.youtube.com/watch?v=mjg00a1gf-8
 
 # Link para o documento final
-[Projeto Palmas Inteligentes_A4_vfinal.pdf](https://github.com/AlineDibbern/palmasinteligentes/files/10051136/Projeto.Palmas.Inteligentes_A4_vfinal.pdf)
+[Projeto Palmas Inteligentes_A4_vfinal.pdf](https://github.com/AlineDibbern/palmasinteligentes/files/10051924/Projeto.Palmas.Inteligentes_A4_vfinal.pdf)
 
 # Conclusões
 Para as conclusões do projeto foram consideradas as seguintes questões e suas, respectivas, respostas: 
@@ -228,7 +228,10 @@ ELETROGATE, 2022. Jumpers – Macho/Macho. < https://www.eletrogate.com/jumpers-
 
 ELETROGATE, 2022. Módulo Wifi. Disponível em: < https://www.eletrogate.com/modulo-wifi-serial-esp8266-esp-01 >. Acessado em: 07 de setembro de 2022. 
 
+GTA.UFRJ, 2022. MQTT. Disponível em: < https://www.gta.ufrj.br/ensino/eel878/redes1-2019-1/vf/mqtt/ >. Acessado em 20 de novembro de 2022.
+
 LEITE, J.R. E.; MARTINS, P. S.; URSINI, E. L. A Internet das Coisas (IoT):Tecnologias e Aplicações. Brazilian Technology Symposium, 2017.
 
-TURING, Dermot. A História da Computação: Do Ábaco à Inteligência Artificial. São Paulo: M.Books do Brazil Editora Ltda, 2019.
+MQTT.ORG. Frequently Asked Questions. MQTT.ORG, 2014. Disponível em: <http://mqtt.org/faq>. Acesso em: 20 de novembro de 2022.
 
+TURING, Dermot. A História da Computação: Do Ábaco à Inteligência Artificial. São Paulo: M.Books do Brazil Editora Ltda, 2019.
