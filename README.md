@@ -186,6 +186,8 @@ Caso haja uma segunda palma, em certo intervalo de tempo, ou acionamento do inte
 # Link para o vídeo-demonstração
 https://www.youtube.com/watch?v=mjg00a1gf-8
 
+https://youtu.be/-G5TG_ZGEGU
+
 # Link para o documento final
 [Projeto Palmas Inteligentes_A4_vfinal.pdf](https://github.com/AlineDibbern/palmasinteligentes/files/10051924/Projeto.Palmas.Inteligentes_A4_vfinal.pdf)
 
@@ -196,7 +198,7 @@ Para as conclusões do projeto foram consideradas as seguintes questões e suas,
 
 •	Quais são os principais problemas enfrentados e como foram resolvidos? Um dos principais problemas enfrentados foi realizar a conexão entre ESP01, Arduino e Adafruit, e depois foi conciliar o módulo sensor de som ao interruptor para compilação do código no Arduino. Outra dificuldade foi ajustar a sensibilidade do módulo sensor de som. A forma como achamos para resolver foi procurar por informações na internet de projetos que sugeriam ideias de como resolver o problema encontrado por nós.
 
-•	Quais são as vantagens e desvantagens do projeto? A vantagem é que não há a necessidade de você chegar até um interruptor físico para acender as luzes (podendo beneficiar inclusive pessoas com limite de mobilidade), por meio de um simples acesso na internet (interruptor digital) ou com o bater de palmas a luzes se acendem. Rápido e prático. A principal vantagem, e o principal intuito desse projeto, é a segurança e a facilidade. A desvantagem seria caso o local esteja sem energia elétrica o sistema não iria funcionar. Outra desvantagem seria caso o local esteja sem internet o interruptor digital não iria acionar. Outra desvantagem seria para o sensor de som, que possui uma distancia limite para ser acionado.
+•	Quais são as vantagens e desvantagens do projeto? A vantagem é que não há a necessidade de você chegar até um interruptor físico para acender as luzes, podendo inclusive, beneficiar pessoas com limite de mobilidade. Por meio de um simples acesso na internet (interruptor digital) ou com o bater de palmas as luzes se acendem ou se apagam. Rápido, prático e levando comodidade ao usuário, o projeto Palmas Inteligentes pode contribuir até mesmo com fator financeiro auxiliando contra o desperdício de energia em grandes projetos que utilizem iluminação smart. A principal vantagem, e o principal intuito desse projeto, é a segurança e a facilidade. A desvantagem seria caso o local esteja sem energia elétrica o sistema não iria funcionar. Outra desvantagem seria caso o local esteja sem internet o interruptor digital não iria acionar. Outra desvantagem seria para o sensor de som, que possui uma distância limite para ser acionado.
 
 •	O que deveria/poderia ser feito para melhorar o projeto? Em relação à fonte de energia do Arduino, poderia ser inserida uma bateria para que não houvesse a necessidade de ficar utilizando computador como fonte de energia. Outra melhoria seria melhorar a sensibilidade de som do modulo de som, por exemplo, 1 palma acende a luz, duas palmas apagam. 
 
