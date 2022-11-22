@@ -189,7 +189,7 @@ https://www.youtube.com/watch?v=mjg00a1gf-8
 https://youtu.be/-G5TG_ZGEGU
 
 # Link para o documento final
-[Projeto Palmas Inteligentes_A4_vfinal.pdf](https://github.com/AlineDibbern/palmasinteligentes/files/10051924/Projeto.Palmas.Inteligentes_A4_vfinal.pdf)
+[Projeto_Palmas_Inteligentes_A4_vfinal2.pdf](https://github.com/AlineDibbern/palmasinteligentes/files/10071743/Projeto_Palmas_Inteligentes_A4_vfinal2.pdf)
 
 # Conclusões
 Para as conclusões do projeto foram consideradas as seguintes questões e suas, respectivas, respostas: 
